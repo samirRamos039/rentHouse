@@ -1,0 +1,13 @@
+/* src/pages/ViviendasPage.css */
+
+.viviendas-page {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .viviendas-grid {
+    display: grid; /* Cambiamos a display: grid */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Define las columnas */
+  gap: 20px; /* Espacio entre las tarjetas */
+  margin-top: 20px;
+  }
