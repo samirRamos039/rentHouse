@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
 import LoginPage from '../component/Auth/LoginPage';
 import RegisterPage from '../component/Auth/RegisterPage';
-import MenuBar from '../component/Layout/MenuBar';
-import './HomePage.css'; // Importa el archivo de estilos
+import './HomePage.css'; // Asegúrate de tener los estilos
+
+// Importa la imagen de la casa moderna (asegúrate de tenerla en tu carpeta src/assets o public)
+import modernHouseImage from '../assets/modern-house.jpg'; // Ajusta la ruta según tu estructura de carpetas
 
 function HomePage() {
   const [showLogin, setShowLogin] = useState(true);
@@ -12,13 +14,11 @@ function HomePage() {
   };
 
   return (
-    <div className="home-page">
-      <MenuBar />
-      <div className="hero-section">
-        <h1>Alquiler de Viviendas</h1>
-        <p className="tagline">Encuentra tu hogar ideal.</p>
+    <div className="home-page-layout">
+      <div className="image-container">
+        <img src={modernHouseImage} alt="Casa Moderna" className="hero-image" />
       </div>
-      <div className="auth-container">
+      <div className="auth-section">
         <div className="auth-toggle">
           <button
             className={showLogin ? 'active' : ''}
@@ -37,7 +37,6 @@ function HomePage() {
           {showLogin ? <LoginPage /> : <RegisterPage />}
         </div>
       </div>
-      {/* Aquí podrías agregar más contenido de la página principal, como listado de viviendas destacadas, etc. */}
     </div>
   );
 }
