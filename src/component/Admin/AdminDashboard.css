@@ -1,0 +1,74 @@
+/* src/components/Admin/AdminDashboard.css */
+
+.admin-dashboard {
+    padding: 20px;
+  }
+  
+  .admin-actions {
+    margin-bottom: 20px;
+  }
+  
+  .admin-actions button {
+    padding: 10px 15px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+  }
+  
+  .admin-actions button:hover {
+    background-color: #0056b3;
+  }
+  
+  .user-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .user-table th,
+  .user-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .user-table th {
+    background-color: #f2f2f2;
+  }
+  
+  .actions-column {
+    white-space: nowrap; /* Evita que los botones se rompan en varias líneas */
+  }
+  
+  .actions-column button {
+    padding: 8px 12px;
+    margin-right: 5px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9em;
+    transition: background-color 0.3s ease;
+  }
+  
+  .actions-column button:first-child {
+    background-color: #28a745; /* Verde para actualizar */
+    color: white;
+  }
+  
+  .actions-column button:first-child:hover {
+    background-color: #1e7e34;
+  }
+  
+  .actions-column button:last-child {
+    background-color: #dc3545; /* Rojo para eliminar */
+    color: white;
+  }
+  
+  .actions-column button:last-child:hover {
+    background-color: #c82333;
+  }

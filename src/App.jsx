@@ -3,10 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import HomePage from './pages/HomePage';
 import AdminDashboard from './component/Admin/AdminDashboard';
 import MenuBar from './component/Layout/MenuBar'; // Importa el MenuBar
-<<<<<<< HEAD
-=======
 import ViviendasPage from './pages/ViviendasPage'; 
->>>>>>> 6e0455a0adbe59a8dd25b88b6b986fa841c94e52
 
 function App() {
   return (
@@ -17,10 +14,7 @@ function App() {
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/admin" element={<AdminDashboard />} />
-<<<<<<< HEAD
-=======
             <Route path="/viviendas" element={<ViviendasPage />} /> {/* Nueva ruta */}
->>>>>>> 6e0455a0adbe59a8dd25b88b6b986fa841c94e52
             {/* Otras rutas de tu aplicación */}
           </Routes>
         </div>

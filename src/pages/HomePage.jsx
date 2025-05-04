@@ -4,7 +4,7 @@ import RegisterPage from '../component/Auth/RegisterPage';
 import './HomePage.css'; // Asegúrate de tener los estilos
 
 // Importa la imagen de la casa moderna (asegúrate de tenerla en tu carpeta src/assets o public)
-import modernHouseImage from '../assets/modern-house.jpg'; // Ajusta la ruta según tu estructura de carpetas
+import modernHouseImage from '../assets/casa1.jpg'; // Ajusta la ruta según tu estructura de carpetas
 
 function HomePage() {
   const [showLogin, setShowLogin] = useState(true);
